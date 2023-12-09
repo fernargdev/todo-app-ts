@@ -12,6 +12,8 @@
 ## Bugs:
 
 1. Tenia que poner este import import 'todomvc-app-css/index.css' y habia puesto este import 'todomvc-app-css'
+2. Error en los nombres de las clases que importo
+3. Error de propdrilling
 
 ## TypeScript:
 
@@ -25,3 +27,8 @@
 ## Trucos de Devs:
 
 1. Llamar al fichero types.d.ts, se le pone .d para saber de forma visual que ese archivo solo contiene las declaraciones, no contiene codigo.
+
+## PropDrilling:
+
+1. Tengo un error por props drilling, estoy pasando la funcion de borrar, desde App, hasta Todo que seria el nieto, pero como es solo un nivel, es algo menor.
+2. Se podria arreglar facil con useContext pero en casos asi no vale la pena
