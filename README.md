@@ -2,11 +2,11 @@
 
 ## Create a TodoMVC with TypeScript
 
-- [ ] Initialize project with Vite
-- [ ] Add linter for TypeScript + React
-- [ ] Add TodoMVC styles
-- [ ] List all ALL
-- [ ] Be able to delete an ALL
+- [x] Initialize project with Vite
+- [x] Add linter for TypeScript + React
+- [x] Add TodoMVC styles
+- [x] List all ALL
+- [x] Be able to delete an ALL
 - [ ] Mark ALL as completed
 - [ ] Add way to filter ALLs (Footer)
 - [ ] Show number of pending TODOs (Footer)

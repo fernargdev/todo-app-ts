@@ -19,6 +19,29 @@
 
 1. Se usan types para atributos por separados y interface para objetos y otras extructuras mas complejas
 
+2. En ts puedo hacer esto:
+
+```
+export interface Todo {
+  id: string
+  title: string
+  completed: boolean
+}
+
+// export type TodoId = Omit<Todo, 'title' | 'completed'>
+export type TodoId = Pick<Todo, 'id'>
+```
+
+- Con esto logro exportar un atributo especifico de una interfaz, se pueden hacer omitiendo con el Omit como en el primer caso o seleccionando con el Pick como en el segundo caso
+
+Despues se pueden usar donde se desee como en este caso:
+
+```
+ const handleRemove = ({ id }: TodoId): void => {}
+```
+
+- Hago esto: {id} porque estoy usando parametros nombrados en esta funcion
+
 ## JSX.Element vs React.FC:
 
 1. El React.FC le puedes pasar las props tipadas por que con React.FC(Funcional Component) lo que estas haciendo es tipar la funcion
