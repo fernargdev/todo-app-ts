@@ -16,3 +16,12 @@
 ## TypeScript:
 
 1. Se usan types para atributos por separados y interface para objetos y otras extructuras mas complejas
+
+## JSX.Element vs React.FC:
+
+1. El React.FC le puedes pasar las props tipadas por que con React.FC(Funcional Component) lo que estas haciendo es tipar la funcion
+2. JSX.Element no se le pueden tipar las props por que lo que estas haciendo con esto es tipar lo que devuelve la funcion
+
+## Trucos de Devs:
+
+1. Llamar al fichero types.d.ts, se le pone .d para saber de forma visual que ese archivo solo contiene las declaraciones, no contiene codigo.
