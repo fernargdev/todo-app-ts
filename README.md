@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# English
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Create a TodoMVC with TypeScript
 
-Currently, two official plugins are available:
+- [ ] Initialize project with Vite
+- [ ] Add linter for TypeScript + React
+- [ ] Add TodoMVC styles
+- [ ] List all ALL
+- [ ] Be able to delete an ALL
+- [ ] Mark ALL as completed
+- [ ] Add way to filter ALLs (Footer)
+- [ ] Show number of pending TODOs (Footer)
+- [ ] Add way to delete all completed TODOs
+- [ ] Create Header with input (Header)
+- [ ] Create a TODO (Header)
+- [ ] Be able to edit the text of a TODO (Double click)
+- [ ] Add animations with AutoAnimate
+- [ ] Go to Reducer
+- [ ] Synchronize with backend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Initialize project
 
-## Expanding the ESLint configuration
+`$ npm create vite@latest`
+TypeScript + SWC
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Add linter for TypeScript + React
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+$ npx eslint --init
+You can also run this command directly using 'npm init @eslint/config'.
+✔ How would you like to use ESLint? · style
+✔ What type of modules does your project use? · esm
+✔ Which framework does your project use? · react
+✔ Does your project use TypeScript? · No / Yes
+✔ Where does your code run? · browser
+✔ How would you like to define a style for your project? · guide
+✔ Which style guide do you want to follow? · standard-with-typescript
+✔ What format do you want your config file to be in? · JSON
+```
