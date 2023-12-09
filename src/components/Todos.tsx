@@ -7,7 +7,7 @@ interface Props {
 
 const Todos: React.FC<Props> = ({ todos }) => {
   return (
-    <ul>
+    <ul className="todo-list">
       {todos.map((todo) => (
         <li key={todo.id} className={todo.completed ? 'completed' : ''}>
           <Todo

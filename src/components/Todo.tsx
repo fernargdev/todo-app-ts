@@ -7,12 +7,13 @@ const Todo: React.FC<Props> = ({ id, title, completed }) => {
     <div className="view">
       <input
         type="checkbox"
-        className="toogle"
+        className="toggle"
         id={id}
         checked={completed}
         onChange={() => {}}
       />
       <label>{title}</label>
+      <button className="destroy" onClick={() => {}}></button>
     </div>
   )
 }
