@@ -7,7 +7,7 @@
 - [x] Add TodoMVC styles
 - [x] List all TODOs
 - [x] Be able to delete an TODO
-- [ ] Mark TODO as completed
+- [x] Mark TODO as completed
 - [ ] Add way to filter TODOs (Footer)
 - [ ] Show number of pending TODOs (Footer)
 - [ ] Add way to delete all completed TODOs
