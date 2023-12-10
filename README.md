@@ -5,10 +5,10 @@
 - [x] Initialize project with Vite
 - [x] Add linter for TypeScript + React
 - [x] Add TodoMVC styles
-- [x] List all ALL
-- [x] Be able to delete an ALL
-- [ ] Mark ALL as completed
-- [ ] Add way to filter ALLs (Footer)
+- [x] List all TODOs
+- [x] Be able to delete an TODO
+- [ ] Mark TODO as completed
+- [ ] Add way to filter TODOs (Footer)
 - [ ] Show number of pending TODOs (Footer)
 - [ ] Add way to delete all completed TODOs
 - [ ] Create Header with input (Header)

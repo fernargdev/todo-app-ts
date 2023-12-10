@@ -55,3 +55,4 @@ Despues se pueden usar donde se desee como en este caso:
 
 1. Tengo un error por props drilling, estoy pasando la funcion de borrar, desde App, hasta Todo que seria el nieto, pero como es solo un nivel, es algo menor.
 2. Se podria arreglar facil con useContext pero en casos asi no vale la pena
+3. El drilling parece repetirse a lo largo de la app, deberia arreglarlo con algun forma de manejar estado global
