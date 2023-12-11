@@ -13,10 +13,6 @@
 - [x] Add way to delete all completed TODOs
 - [x] Create Header with input (Header)
 - [x] Create a TODO (Header)
-- [ ] Be able to edit the text of a TODO (Double click)
-- [ ] Add animations with AutoAnimate
-- [ ] Go to Reducer
-- [ ] Synchronize with backend
 
 ## Initialize project
 
