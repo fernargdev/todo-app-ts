@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { TodoTitle } from '../types'
 
 interface Props {
@@ -5,10 +6,24 @@ interface Props {
 }
 
 const CreateTodo: React.FC<Props> = ({ saveTodo }) => {
+  const [inputValue, setInputValue] = useState('')
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+    event.preventDefault()
+    saveTodo({ title: inputValue })
+    setInputValue('')
+  }
+
   return (
-    <>
-      <h1>CreateTodo</h1>
-    </>
+    <form onSubmit={handleSubmit}>
+      <input
+        className="new-todo"
+        value={inputValue}
+        onChange={() => {}}
+        placeholder="Que quieres hacer ?"
+        autoFocus
+      />
+    </form>
   )
 }
 
