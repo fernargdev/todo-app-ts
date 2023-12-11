@@ -9,11 +9,11 @@ const Header: React.FC<Props> = ({ onAddTodo }) => {
   return (
     <header className="header">
       <h1>
-        Todo with TypeScript
+        TODO
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
           alt="TypeScript Logo"
-          style={{ height: 'auto', width: '60px' }}
+          style={{ height: 'auto', width: '60px', marginLeft: '30px' }}
         />
       </h1>
 
