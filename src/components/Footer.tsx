@@ -19,7 +19,7 @@ const Footer: React.FC<Props> = ({
   return (
     <footer className="footer">
       <span className="todo-count">
-        <strong>{activeCount}</strong>
+        <strong style={{ color: 'red' }}>{activeCount} </strong>
         Tareas Pendientes
       </span>
 
