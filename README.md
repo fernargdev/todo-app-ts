@@ -8,8 +8,8 @@
 - [x] List all TODOs
 - [x] Be able to delete an TODO
 - [x] Mark TODO as completed
-- [ ] Add way to filter TODOs (Footer)
-- [ ] Show number of pending TODOs (Footer)
+- [x] Add way to filter TODOs (Footer)
+- [x] Show number of pending TODOs (Footer)
 - [ ] Add way to delete all completed TODOs
 - [ ] Create Header with input (Header)
 - [ ] Create a TODO (Header)

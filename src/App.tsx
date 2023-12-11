@@ -33,6 +33,9 @@ const App = (): JSX.Element => {
     TODO_FILTERS.ALL
   )
 
+  const activeCount = todos.filter((todos) => !todos.completed).length
+  const completeCount = todos.length - activeCount
+
   const handleRemove = ({ id }: TodoId): void => {
     const newTodos = todos.filter((todo) => todo.id !== id)
     setTodos(newTodos)
@@ -56,25 +59,33 @@ const App = (): JSX.Element => {
   }
 
   const handleFilterChange = (filter: FilterValue): void => {
+    // console.log(filter)
     setFilterSelected(filter)
   }
 
-  const activeCount = todos.filter((todos) => !todos.completed).length
-  const completeCount = todos.length - activeCount
+  const filteredTodo = todos.filter((todo) => {
+    if (filterSelected === TODO_FILTERS.ACTIVE) {
+      return !todo.completed
+    }
+    if (filterSelected === TODO_FILTERS.COMPLETED) {
+      return todo.completed
+    }
+    return true
+  })
 
   return (
     <div className="todoapp">
       <Todos
+        onCompleted={handleCompleted}
         onRemoveTodo={handleRemove}
-        handleCompleted={handleCompleted}
-        todos={todos}
+        todos={filteredTodo}
       />
       <Footer
         activeCount={activeCount}
         completeCount={completeCount}
         onClearCompleted={() => {}}
         filterSelected={filterSelected}
-        handleFilterChange={handleFilterChange}
+        onFilterChange={handleFilterChange}
       />
     </div>
   )

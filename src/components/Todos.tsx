@@ -4,14 +4,11 @@ import Todo from './Todo'
 
 interface Props {
   todos: ListOfTodos
-  handleCompleted: ({
-    id,
-    completed,
-  }: Pick<TodoType, 'id' | 'completed'>) => void
   onRemoveTodo: ({ id }: TodoId) => void
+  onCompleted: ({ id, completed }: Pick<TodoType, 'id' | 'completed'>) => void
 }
 
-const Todos: React.FC<Props> = ({ todos, onRemoveTodo, handleCompleted }) => {
+const Todos: React.FC<Props> = ({ todos, onRemoveTodo, onCompleted }) => {
   return (
     <ul className="todo-list">
       {todos.map((todo) => (
@@ -21,7 +18,7 @@ const Todos: React.FC<Props> = ({ todos, onRemoveTodo, handleCompleted }) => {
             id={todo.id}
             title={todo.title}
             completed={todo.completed}
-            handleCompleted={handleCompleted}
+            onCompleted={onCompleted}
             onRemoveTodo={onRemoveTodo}
           />
         </li>

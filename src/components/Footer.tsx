@@ -6,7 +6,7 @@ interface Props {
   completeCount: number
   filterSelected: FilterValue
   onClearCompleted: () => void
-  handleFilterChange: (filter: FilterValue) => void
+  onFilterChange: (filter: FilterValue) => void
 }
 
 const Footer: React.FC<Props> = ({
@@ -14,7 +14,7 @@ const Footer: React.FC<Props> = ({
   completeCount = 0,
   filterSelected,
   onClearCompleted,
-  handleFilterChange,
+  onFilterChange,
 }) => {
   return (
     <footer className="footer">
@@ -25,7 +25,7 @@ const Footer: React.FC<Props> = ({
 
       <Filters
         filterSelected={filterSelected}
-        onFilterChange={handleFilterChange}
+        onFilterChange={onFilterChange}
       />
     </footer>
   )
