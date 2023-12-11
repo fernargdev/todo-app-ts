@@ -10,9 +10,9 @@
 - [x] Mark TODO as completed
 - [x] Add way to filter TODOs (Footer)
 - [x] Show number of pending TODOs (Footer)
-- [ ] Add way to delete all completed TODOs
-- [ ] Create Header with input (Header)
-- [ ] Create a TODO (Header)
+- [x] Add way to delete all completed TODOs
+- [x] Create Header with input (Header)
+- [x] Create a TODO (Header)
 - [ ] Be able to edit the text of a TODO (Double click)
 - [ ] Add animations with AutoAnimate
 - [ ] Go to Reducer
